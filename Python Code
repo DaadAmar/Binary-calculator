@@ -1,17 +1,17 @@
 def is_valid_binary(number):
     return all(bit == '0' or bit == '1' for bit in number)
 
-"""
-The function flips each bit in the binary string. All '0's become '1's,
-and all '1's become '0's, resulting in the one's complement of the binary number.
-"""
+
+#  The function flips each bit in the binary string. All '0's become '1's,
+# and all '1's become '0's, resulting in the one's complement of the binary number.
+
 def ones_complement(binary):
     return ''.join('1' if bit == '0' else '0' for bit in binary)
 
-"""
-This function takes a value that is one's complement and adds one to it making 
-it two's complement
-"""
+
+#  This function takes a value that is one's complement and adds one to it making 
+# it two's complement
+
 def twos_complement(output1):
     binary_list = list(output1)
     index = len(binary_list) - 1
